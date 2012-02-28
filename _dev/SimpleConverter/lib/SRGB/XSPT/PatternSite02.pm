@@ -187,7 +187,7 @@ XSHeaderInfo
     </div> <!-- menu + content -->
 
    <div><!-- used to be footer.jpg -->
-   	<a href="About.html"> <img height="15px" alt="about this work" src="<?perl $XSStyleRoot ?>SRGBDiv/about.png" border="0" /> <bold><font size="3"> About </font></bold></a>
+   	<a href="<?perl $XSStyleRoot ?>/../../About.html"> <img height="15px" alt="about this work" src="<?perl $XSStyleRoot ?>SRGBDiv/about.png" border="0" /> <bold><font size="3"> About </font></bold></a>
    </div>
 </div>
 
