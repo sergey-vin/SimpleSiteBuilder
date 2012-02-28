@@ -294,13 +294,23 @@ sub InsertMenu($$$;$)
   return $transfor_vars;
 }
 
-sub SanitizeHTML($)
+sub SanitizeHTML($;$)
 {
   my $str = shift;
+  my $node = shift;
 
+  my $need_print = $node->{f_from} =~ /Ex._1.2.ht/;
+
+  printf("Sanitize on %s!\n", $node->{f_from}) if $need_print;
 # @todo delete DIGERATTI!!!
 #   WriteFile('1', $$str);
+  printf("San: init  len = %d\n", length($$str)) if $need_print;
   $$str =~ s/<div[^<>]+(Top|Bottom)NavBar.*?<\/div>//sg;
+  printf("San: after RE1 = %d\n", length($$str)) if $need_print;
+  $$str =~ s/<button[^<>]+Hint.*?button>//sg;
+  printf("San: after RE2 = %d\n", length($$str)) if $need_print;
+  $$str =~ s/<p id="Instructions">.*?<\/p>//sg;
+
 #   WriteFile('2', $$str);
 }
 
@@ -381,7 +391,7 @@ sub CreateFiles($$)
       {
         ## reading real file, modifying, saving
         my $str = ReadFile($node->{f_from});
-        SanitizeHTML(\$str);
+        SanitizeHTML(\$str, $node);
         WriteFile($node->{r_to}, $str);
       }
       else
