@@ -131,7 +131,19 @@ XSHeaderInfo
       <div style="position:relative;">
         <img onclick="AdjustSize();" src="<?perl $XSStyleRoot ?>SRGBDiv/logo.jpg" alt="" border="0" height="116" width="980">
         <div id="srgb_header_top_right"> 
-          <?perl $XSHeaderInfo ?>
+		<table cellpadding="0px" cellspacing="0px" align="center" border="0" width="100%">
+		<tr>
+		  <td align="left">
+		    <img height="95px" src="<?perl $XSStyleRoot ?>SRGBDiv/title_left.png" />
+		  </td>
+		  <td width="*" align="center">
+		    <?perl $XSHeaderInfo ?>
+		  </td>
+		  <td align="right">
+		    <img height="95px" src="<?perl $XSStyleRoot ?>SRGBDiv/title_right.png" />
+		  <td>
+		</tr>
+		</table>
         </div>
       </div>
     </div>
@@ -174,7 +186,9 @@ XSHeaderInfo
 
     </div> <!-- menu + content -->
 
-    <img alt="" src="<?perl $XSStyleRoot ?>SRGBDiv/footer.jpg" border="0">
+   <div><!-- used to be footer.jpg -->
+   	<a href="About.html"> <img height="15px" alt="about this work" src="<?perl $XSStyleRoot ?>SRGBDiv/about.png" border="0" /> <bold><font size="3"> About </font></bold></a>
+   </div>
 </div>
 
 

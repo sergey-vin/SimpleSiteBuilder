@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+# (c) Segrey Vinogradov, 2009-2012
 
 use Data::Dumper;
 use File::Path;
