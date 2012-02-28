@@ -1,0 +1,160 @@
+/* Sergey Vinogradov (c) 2009 */
+
+
+body
+{
+  color:#0f0f0f;
+  background-color:#C0C0C0; /*replaced by img*/
+}
+
+/* id = main div, right after 'body' */
+#srgb_main_div
+{
+ overflow:hidden;
+/*
+  padding-bottom:6px;
+  position:relative;
+  top:-5px;
+  
+  border-width:0px;
+  border-style:groove;
+/**/
+  height:100%;
+}
+
+
+/* ------ menu & content --------- */
+
+#srgb_menu_n_content
+{
+  height:100%;
+  width:99%;
+  position:relative;
+/*  background-color:green; ..... for tests only*/
+}
+
+#srgb_content_bar
+{
+  background-color:#C0C0C0;
+  height:100%;
+  /*height:500px;
+  float:right;*/
+  position:absolute;
+  top:0;
+  right:0
+}
+#srgb_menu_bar
+{
+  width:300px;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0
+}
+
+
+/* ------ menu header --------- */
+#srgb_menu_top
+{
+  position:relative;
+}
+#srgb_menu_top div
+{
+  position:absolute;
+  top:3px;
+}
+#srgb_menu_top_left
+{
+  left:5px
+}
+#srgb_menu_top_right
+{
+  right:5px
+}
+
+/* ------ menu list --------- */
+#srgb_menu_rel_div
+{
+  position:relative;
+  left:-35;
+  top:-22;
+}
+#srgb_menu_div
+{
+ height:100%;
+  padding:6px;
+  background-color:#363636;
+  overflow:auto;
+}
+
+
+/* ------ header - what's written in banner --------- */
+
+#srgb_header_top_right
+{
+  position:absolute;
+  left:0;
+  top:0;
+  height:100px; /*116*/
+
+  padding:10px;
+  color:#223399;
+  font-family:Georgia,"Times New Roman",Times,serif;
+  font-size:1em;
+  font-style:italic;
+  font-variant:normal;
+  font-weight:bold;
+  text-align:left;
+}
+#srgb_header_top_right h1
+{
+	font-family: sans-serif;
+	font-style: italic;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: large;
+	line-height: 100%;
+	word-spacing: normal;
+	letter-spacing: normal;
+	text-decoration: none;
+	text-transform: none;
+	text-align: left;
+	text-indent: 0ex;
+}
+
+
+/* ------ from menu stuff --------- */
+.treeview a, 
+.treeview ul li a, 
+.treeview, 
+.treeview .submenu ul li
+.treeview li.submenu
+{
+  font-family:Georgia,"Times New Roman",Times,serif;
+  font-size:1em;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:normal;
+  text-align:left;
+}
+
+/* unselected (links): root files & files in dirs & root dirs */
+.treeview a,
+.treeview ul li a,
+.treeview li.submenu
+{ /*CSS for Simple Tree Menu*/
+color:#bbb0ee;
+}
+
+/* selected: root files & files in dirs */
+.treeview, .treeview .submenu ul li{ /*CSS for Simple Tree Menu*/
+/*color:#aa8866; */
+color:#bbb0ee;;
+}
+
+/* current file & dirs; @note to achieve it, I modified simplemenu.js & HTMLMenu.pm */
+#srgb_selected_root_dir { /* Style for LI that contains sub lists (other ULs). */
+color:#ff3333;
+}
+
+

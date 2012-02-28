@@ -1,0 +1,35 @@
+﻿# @description config file for auto-generated content
+# @author Sergey Vinogradov <work.serge@gmail.com>
+# @syntax
+#   * each line starting w/ '#' is a comment
+#   * each line starting w/ '$' is a variable
+#   ** usually it should be "$var [value]"
+#   ** if 'value' is empty (like in "$var") then $var is undefined
+#   ** variable's value starts w/ first non-space symbol after variable name
+#   ** variable's value can consist of several lines, ending with next variable definition
+#   *** if you want the value to have empty lines at the end - just press <enter> serveral times
+#   *** if you want the value to be terminated at the end of line, start new line with comment or next value definition
+#   *** example of single line var:
+#       |$var hello, world
+#       |$next_var
+#       => this will cause in empty $next_var and $var="hello, world"
+#       |$var       hello, world
+#       |#
+#       |$next_var  
+#       => this will cause in the same affect as above (mind 
+#   *** example of multiple lines var:
+#       |$var hello, 
+#       |world
+#       |
+#       |$next_var
+#       => this will cause in empty $next_var and $var="hello,\n world\n", where "\n" is end-of-line-symbol
+#   ** if variable was specified twice, second value will be taken
+# @html
+# * to insert an image, put <img src="20.png" />
+# * to insert a title, put <h2>text</h2>
+
+$index_name     Start Page
+$top_left       Some minor title that accompanies your work, like name of organization,  or division...
+# $top_middle     M..
+# $top_right      R.. 
+$title		<font size="6">Some scary name of a topic with big letters</font>
