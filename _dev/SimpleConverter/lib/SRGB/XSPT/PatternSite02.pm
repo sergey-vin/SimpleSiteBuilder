@@ -130,7 +130,7 @@ XSHeaderInfo
     <div>
       <div style="position:relative;">
         <img onclick="AdjustSize();" src="<?perl $XSStyleRoot ?>SRGBDiv/logo.jpg" alt="" border="0" height="116" width="980">
-        <div id="srgb_header_top_right"> 
+        <div id="srgb_header_top_right" style="padding:0;width:100%;margin:10px"> 
 		<table cellpadding="0px" cellspacing="0px" align="center" border="0" width="100%">
 		<tr>
 		  <td align="left">
@@ -139,7 +139,7 @@ XSHeaderInfo
 		  <td width="*" align="center">
 		    <?perl $XSHeaderInfo ?>
 		  </td>
-		  <td align="right">
+		  <td align="right" style="padding-right:20px">
 		    <img height="95px" src="<?perl $XSStyleRoot ?>SRGBDiv/title_right.png" />
 		  <td>
 		</tr>
