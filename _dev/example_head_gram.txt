@@ -1,0 +1,6 @@
+# @description config file for auto-generated content
+# @author Sergey Vinogradov <work.serge@gmail.com>
+
+$title          
+<h1>English Language Automated Tutor</h1>
+<h3>Grammar training</h3>
