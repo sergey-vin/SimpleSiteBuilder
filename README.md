@@ -3,6 +3,11 @@ Simple Site Builder
 
 Builds static site with dhtml-tree-like navigation out of the given direcorties & html templates
 
+## Quick info
+Language(s): Perl
+IDE(s): vim, perl -d
+Platform: any (tested on Windows, Linux, Mac)
+
 ## License
 (c) Sergey Vinogradov, 2008-2012.
 You may use it and redistribute as you wish, but please, leave a note about the author.
